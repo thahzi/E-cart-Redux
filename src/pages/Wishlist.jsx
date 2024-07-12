@@ -1,8 +1,11 @@
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+
 
 function Wishlist() {
   return (
@@ -29,7 +32,7 @@ function Wishlist() {
 
     <div style={{height:'100vh',width:'100%',display:'flex',justifyContent:'center', alignItems:'center',flexDirection:'column'}}>
       <img src="https://www.taazashahimewa.com/assets/front/images/wishlist-empty1.jpg" alt="no image" width={"100%"}/>
-    <Link to={'/'}><button className='mt-3 mb-5  rounded-5 shadow bg-warning text-light fs-5 '>back to home</button></Link>
+    <Link to={'/'}><button className='mt-3 mb-5  rounded-5 shadow bg-warning text-light fs-5 p-2'><FontAwesomeIcon icon={faArrowLeft} className='me-3'/>back to home</button></Link>
     </div>
 
 
